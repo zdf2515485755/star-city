@@ -1,55 +1,33 @@
 package com.zdf.internalcommon.result;
 
+import com.zdf.internalcommon.constant.StatusCode;
+import lombok.Data;
+import lombok.experimental.Accessors;
+
 import java.io.Serializable;
 
+@Data
+@Accessors(chain = true)
 public class ResponseResult <T> implements Serializable {
     private Integer code;
     private String message;
     private transient T data;
 
-    public String getMessage() {
-        return message;
+    public static<T> ResponseResult success(T data)
+    {
+        return new ResponseResult().setCode(StatusCode.SUCCESS.getCode()).setMessage(StatusCode.SUCCESS.getMessage()).setData(data);
+    }
+    public static<T> ResponseResult success(Integer code, String message, T data)
+    {
+        return new ResponseResult().setCode(code).setMessage(message).setData(data);
+    }
+    public static  ResponseResult fail()
+    {
+        return new ResponseResult().setCode(StatusCode.FAIL.getCode()).setMessage(StatusCode.FAIL.getMessage());
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public static ResponseResult fail(Integer code, String message)
+    {
+        return new ResponseResult().setCode(code).setMessage(message);
     }
-
-    public T getData() {
-        return data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
-    }
-
-    public Integer getCode() {
-        return code;
-    }
-
-    @Override
-    public String toString() {
-        return "ResponseResult{" +
-                "code=" + code +
-                ", message='" + message + '\'' +
-                ", data=" + data +
-                '}';
-    }
-
-    public void setCode(Integer code) {
-        this.code = code;
-    }
-
-    public ResponseResult(Integer code, String message, T data){
-        this.code = code;
-        this.message = message;
-        this.data = data;
-    }
-
-    public ResponseResult(Integer code, String message){
-        this.code = code;
-        this.message = message;
-    }
-
-
 }
