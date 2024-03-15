@@ -6,6 +6,9 @@ import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 
+/**
+ * @author mrzhang
+ */
 @Data
 @Accessors(chain = true)
 public class ResponseResult <T> implements Serializable {
@@ -29,5 +32,10 @@ public class ResponseResult <T> implements Serializable {
     public static ResponseResult fail(Integer code, String message)
     {
         return new ResponseResult().setCode(code).setMessage(message);
+    }
+
+    public static<T> ResponseResult fail(T data)
+    {
+        return new ResponseResult().setCode(StatusCode.FAIL.getCode()).setMessage(StatusCode.FAIL.getMessage()).setData(data);
     }
 }

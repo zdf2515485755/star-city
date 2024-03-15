@@ -2,8 +2,12 @@ package com.zdf.internalcommon.constant;
 
 import lombok.Getter;
 
+/**
+ * @author mrzhang
+ */
 @Getter
 public enum StatusCode {
+    //成功
     SUCCESS(1, "SUCCESS"),
     FAIL(0, "FAIL"),
     SYSTEM_USER_ADD_ERROR(10000, "SYSTEM USER ADD ERROR"),
