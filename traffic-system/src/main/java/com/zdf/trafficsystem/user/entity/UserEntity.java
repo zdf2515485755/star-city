@@ -6,7 +6,10 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 /**
+ * @return null
  * @author mrzhang
+ * @description TODO
+ * @date 2024/3/16 19:43
  */
 @Data
 @Entity
@@ -14,7 +17,7 @@ import java.time.LocalDateTime;
 public class UserEntity {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long uid;
+  private Long uid;
   @Column(name = "uname")
   private String uname;
   @Column(name = "uaccount")

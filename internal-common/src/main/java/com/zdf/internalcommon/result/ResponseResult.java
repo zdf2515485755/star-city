@@ -7,7 +7,10 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
+ * @return null
  * @author mrzhang
+ * @description TODO
+ * @date 2024/3/16 19:43
  */
 @Data
 @Accessors(chain = true)
@@ -37,5 +40,10 @@ public class ResponseResult <T> implements Serializable {
     public static<T> ResponseResult fail(T data)
     {
         return new ResponseResult().setCode(StatusCode.FAIL.getCode()).setMessage(StatusCode.FAIL.getMessage()).setData(data);
+    }
+
+    public static<T> ResponseResult fail(Integer code, String message, T data)
+    {
+        return new ResponseResult().setCode(code).setMessage(message).setData(data);
     }
 }
