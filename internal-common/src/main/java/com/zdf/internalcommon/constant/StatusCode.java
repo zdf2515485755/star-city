@@ -3,9 +3,8 @@ package com.zdf.internalcommon.constant;
 import lombok.Getter;
 
 /**
- * @return null
  * @author mrzhang
- * @description TODO
+ * @description status code
  * @date 2024/3/16 19:43
  */
 @Getter
