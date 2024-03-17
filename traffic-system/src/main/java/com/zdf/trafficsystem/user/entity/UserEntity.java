@@ -1,18 +1,18 @@
 package com.zdf.trafficsystem.user.entity;
 
 import lombok.Data;
+import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 /**
- * @return null
  * @author mrzhang
- * @description TODO
  * @date 2024/3/16 19:43
  */
 @Data
 @Entity
+@DynamicUpdate
 @Table(name = "t_user")
 public class UserEntity {
   @Id
@@ -35,5 +35,5 @@ public class UserEntity {
   @Column(name = "utime")
   private LocalDateTime utime;
   @Column(name = "ustatus")
-  private long ustatus;
+  private Integer ustatus;
 }

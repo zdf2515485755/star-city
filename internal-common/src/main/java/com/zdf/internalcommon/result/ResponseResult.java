@@ -7,9 +7,8 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * @return null
  * @author mrzhang
- * @description TODO
+ * @description Return result processing class
  * @date 2024/3/16 19:43
  */
 @Data

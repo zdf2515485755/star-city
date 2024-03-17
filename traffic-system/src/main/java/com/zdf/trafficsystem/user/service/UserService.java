@@ -4,7 +4,9 @@ import com.zdf.internalcommon.constant.StatusCode;
 import com.zdf.internalcommon.constant.UserInfoConstant;
 import com.zdf.internalcommon.request.AddUserRequestDto;
 import com.zdf.internalcommon.request.BatchDeleteUserRequestDto;
+import com.zdf.internalcommon.request.UpdateUserRequestDto;
 import com.zdf.internalcommon.result.ResponseResult;
+import com.zdf.internalcommon.util.JpaUtil;
 import com.zdf.trafficsystem.user.entity.UserEntity;
 import com.zdf.trafficsystem.user.repo.UserRepository;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -21,17 +23,19 @@ import java.util.Optional;
 
 
 /**
- * @return null
  * @author mrzhang
- * @description TODO
  * @date 2024/3/16 19:43
  */
 @Service
 public class UserService {
 
-    @Autowired
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
     private final Logger logger = LoggerFactory.getLogger(UserService.class);
+    @Autowired
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
     public ResponseResult<Boolean> addUser(AddUserRequestDto addUserRequestDto){
         logger.info("Start performing the operation of adding users");
         UserEntity userEntity = new UserEntity();
@@ -48,12 +52,13 @@ public class UserService {
         return ResponseResult.success(Boolean.TRUE);
     }
 
-    public ResponseResult<Boolean>deleteUserById(Integer uid){
+    public ResponseResult<Boolean>deleteUserByUid(Integer uid){
         Optional<UserEntity> userEntityOptional = userRepository.findById(uid.longValue());
         if (userEntityOptional.isPresent()){
             UserEntity userEntity = userEntityOptional.get();
             logger.info("get the userEntity: {}" , userEntity);
             userEntity.setUstatus(UserInfoConstant.USER_STATUS_DELETE);
+            userEntity.setUtime(LocalDateTime.now());
             try{
                 userRepository.save(userEntity);
                 logger.info("delete user status succes");
@@ -78,7 +83,10 @@ public class UserService {
             logger.error("user is not exit");
             return ResponseResult.fail(StatusCode.SYSTEM_USER_IS_NOT_EXIT.getCode(), StatusCode.SYSTEM_USER_IS_NOT_EXIT.getMessage(), Boolean.FALSE);
         }
-        userEntityList.forEach(userEntity -> userEntity.setUstatus(UserInfoConstant.USER_STATUS_DELETE));
+        userEntityList.forEach(userEntity -> {
+            userEntity.setUstatus(UserInfoConstant.USER_STATUS_DELETE);
+            userEntity.setUtime(LocalDateTime.now());
+        });
         try{
             userRepository.saveAll(userEntityList);
             logger.info("delete user status succes");
@@ -87,5 +95,22 @@ public class UserService {
             return ResponseResult.fail(Boolean.FALSE);
         }
         return ResponseResult.success(Boolean.TRUE);
+    }
+
+    public ResponseResult<Boolean>updateUser(UpdateUserRequestDto updateUserRequestDto){
+        Optional<UserEntity> userEntityOptional = userRepository.findById(updateUserRequestDto.getUid());
+        if (userEntityOptional.isPresent()){
+            JpaUtil.copyNotNullProperties(updateUserRequestDto, userEntityOptional.get());
+            userEntityOptional.get().setUtime(LocalDateTime.now());
+            try{
+                userRepository.save(userEntityOptional.get());
+                logger.info("update user success");
+            }catch (Exception e){
+                logger.error("update user fail");
+                return ResponseResult.fail(Boolean.FALSE);
+            }
+            return ResponseResult.success(Boolean.TRUE);
+        }
+        return ResponseResult.fail(StatusCode.SYSTEM_USER_IS_NOT_EXIT.getCode(),StatusCode.SYSTEM_USER_IS_NOT_EXIT.getMessage(), Boolean.FALSE);
     }
 }
