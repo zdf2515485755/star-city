@@ -21,11 +21,19 @@ public class JpaUtil {
         throw new IllegalStateException("Utility class");
     }
 
-    private static String[] getNullPropertyNames(Object object){
+    public static String[] getNullPropertyNames(Object object){
         final BeanWrapper beanWrapper = new BeanWrapperImpl(object);
         return Stream.of(beanWrapper.getPropertyDescriptors())
                 .map(PropertyDescriptor::getName)
                 .filter(propertyName-> beanWrapper.getPropertyValue(propertyName) == null)
+                .toArray(String[]::new);
+    }
+
+    public static String[] getNotNullPropertyNames(Object object){
+        final BeanWrapper beanWrapper = new BeanWrapperImpl(object);
+        return Stream.of(beanWrapper.getPropertyDescriptors())
+                .map(PropertyDescriptor::getName)
+                .filter(propertyName-> beanWrapper.getPropertyValue(propertyName) != null)
                 .toArray(String[]::new);
     }
 }
