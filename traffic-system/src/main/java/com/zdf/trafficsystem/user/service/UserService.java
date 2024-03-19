@@ -4,6 +4,7 @@ import com.zdf.internalcommon.constant.StatusCode;
 import com.zdf.internalcommon.constant.UserInfoConstant;
 import com.zdf.internalcommon.request.AddUserRequestDto;
 import com.zdf.internalcommon.request.BatchDeleteUserRequestDto;
+import com.zdf.internalcommon.request.PaginationQueryUserRequestDto;
 import com.zdf.internalcommon.request.UpdateUserRequestDto;
 import com.zdf.internalcommon.result.ResponseResult;
 import com.zdf.internalcommon.util.JpaUtil;
@@ -13,13 +14,18 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.BeanWrapper;
+import org.springframework.beans.BeanWrapperImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.criteria.*;
 import java.time.LocalDateTime;
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
+import java.util.*;
 
 
 /**
@@ -112,5 +118,44 @@ public class UserService {
             return ResponseResult.success(Boolean.TRUE);
         }
         return ResponseResult.fail(StatusCode.SYSTEM_USER_IS_NOT_EXIT.getCode(),StatusCode.SYSTEM_USER_IS_NOT_EXIT.getMessage(), Boolean.FALSE);
+    }
+
+    public ResponseResult<List<UserEntity>>queryAllUser(){
+        logger.info("query all user");
+        return ResponseResult.success(userRepository.findAll());
+    }
+
+    public ResponseResult<Page<UserEntity>>paginationQueryrUser(PaginationQueryUserRequestDto paginationQueryUserRequestDto){
+        if (Objects.isNull(paginationQueryUserRequestDto)){
+            return ResponseResult.fail(new ArrayList<>());
+        }
+        Pageable pageRequest = PageRequest.of(paginationQueryUserRequestDto.getCurrentPage(), paginationQueryUserRequestDto.getPageSize());
+        String[] notNullPropertyNames = JpaUtil.getNotNullPropertyNames(paginationQueryUserRequestDto);
+        String[] notNullPropertyNamesArray = Arrays.copyOfRange(notNullPropertyNames, 1, notNullPropertyNames.length);
+
+        if (Arrays.stream(notNullPropertyNames)
+                .anyMatch(str->"pageSize".equals(str) == Boolean.TRUE) &&
+                Arrays.stream(notNullPropertyNames).
+                        anyMatch(str->"currentPage".equals(str) == Boolean.TRUE) && notNullPropertyNames.length == 2){
+            return ResponseResult.success(userRepository.findAll(pageRequest));
+        }
+        Specification<UserEntity> specification = new Specification<UserEntity>(){
+            final BeanWrapper beanWrapper = new BeanWrapperImpl(paginationQueryUserRequestDto);
+            final List<Predicate> predicateList = new ArrayList<>();
+            @Override
+            public Predicate toPredicate(Root<UserEntity> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
+
+                for (String propertyName : notNullPropertyNamesArray){
+                    if (!"pageSize".equals(propertyName) && !"currentPage".equals(propertyName)){
+                        predicateList.add(criteriaBuilder.equal(root.get(propertyName), beanWrapper.getPropertyValue(propertyName)));
+                    }
+                }
+                Predicate[] predicates = new Predicate[predicateList.size()];
+                return criteriaBuilder.and(predicateList.toArray(predicates));
+            }
+        };
+
+        Page<UserEntity> resultPage = userRepository.findAll(specification, pageRequest);
+        return ResponseResult.success(resultPage);
     }
 }

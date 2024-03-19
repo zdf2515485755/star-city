@@ -2,15 +2,19 @@ package com.zdf.trafficsystem.user.controller;
 
 import com.zdf.internalcommon.request.AddUserRequestDto;
 import com.zdf.internalcommon.request.BatchDeleteUserRequestDto;
+import com.zdf.internalcommon.request.PaginationQueryUserRequestDto;
 import com.zdf.internalcommon.request.UpdateUserRequestDto;
 import com.zdf.internalcommon.result.ResponseResult;
+import com.zdf.trafficsystem.user.entity.UserEntity;
 import com.zdf.trafficsystem.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
+import java.util.List;
 
 /**
  * @author mrzhang
@@ -71,5 +75,20 @@ public class UserController {
     @PostMapping("/updateUser")
     public ResponseResult<Boolean>updateUser(@RequestBody UpdateUserRequestDto updateUserRequestDto){
         return userService.updateUser(updateUserRequestDto);
+    }
+    /**
+     * @return ResponseResult<List<UserEntity>>
+     * @author mrzhang
+     * @description query all user
+     * @date 2024/3/18 01:36
+     */
+    @GetMapping("/queryAllUser")
+    public ResponseResult<List<UserEntity>>queryAllUser(){
+        return userService.queryAllUser();
+    }
+
+    @PostMapping("/paginationQueryrUser")
+    public ResponseResult<Page<UserEntity>>paginationQueryrUser(@Validated @RequestBody PaginationQueryUserRequestDto paginationQueryUserRequestDto){
+        return userService.paginationQueryrUser(paginationQueryUserRequestDto);
     }
 }
