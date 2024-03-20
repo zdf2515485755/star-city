@@ -36,4 +36,6 @@ public class UserEntity {
   private LocalDateTime utime;
   @Column(name = "ustatus")
   private Integer ustatus;
+  @Column(name = "rid")
+  private String rid;
 }

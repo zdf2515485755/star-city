@@ -14,12 +14,12 @@ import javax.persistence.*;
 public class CustomerEntity {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long cid;
+  private Long cid;
   private String cname;
   private String phone;
   private String email;
   private String idcard;
-  private long ctype;
-  private long csex;
+  private Integer ctype;
+  private Integer csex;
   private String remark;
 }

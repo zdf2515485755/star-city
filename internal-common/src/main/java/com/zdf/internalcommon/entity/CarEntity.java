@@ -14,6 +14,6 @@ import javax.persistence.*;
 public class CarEntity {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long cid;
+  private Long cid;
   private String cnumber;
 }

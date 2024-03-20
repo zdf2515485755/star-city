@@ -7,11 +7,11 @@ import com.zdf.internalcommon.request.UpdateUserRequestDto;
 import com.zdf.internalcommon.result.ResponseResult;
 import com.zdf.trafficsystem.user.entity.UserEntity;
 import com.zdf.trafficsystem.user.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 import java.util.List;
@@ -25,18 +25,14 @@ import java.util.List;
 @RequestMapping(value = "/user")
 public class UserController {
 
-    final UserService userService;
-
-    @Autowired
-    public UserController(UserService userService) {
-        this.userService = userService;
-    }
+    @Resource
+    private UserService userService;
 
     /**
      * @param addUserRequestDto:
      * @return ResponseResult<Boolean>
      * @author mrzhang
-     * @description add user
+     * @description Add user
      * @date 2024/3/15 21:54
      */
     @PostMapping("/addUser")
@@ -69,7 +65,7 @@ public class UserController {
      * @param updateUserRequestDto:
      * @return ResponseResult<Boolean>
      * @author mrzhang
-     * @description update User
+     * @description Update user
      * @date 2024/3/16 22:20
      */
     @PostMapping("/updateUser")
@@ -79,7 +75,7 @@ public class UserController {
     /**
      * @return ResponseResult<List<UserEntity>>
      * @author mrzhang
-     * @description query all user
+     * @description Query all user
      * @date 2024/3/18 01:36
      */
     @GetMapping("/queryAllUser")
@@ -87,8 +83,15 @@ public class UserController {
         return userService.queryAllUser();
     }
 
+    /**
+     * @param paginationQueryUserRequestDto:
+     * @return ResponseResult<Page<UserEntity>>
+     * @author mrzhang
+     * @description Dynamic pagination query user
+     * @date 2024/3/20 19:09
+     */
     @PostMapping("/paginationQueryrUser")
-    public ResponseResult<Page<UserEntity>>paginationQueryrUser(@Validated @RequestBody PaginationQueryUserRequestDto paginationQueryUserRequestDto){
-        return userService.paginationQueryrUser(paginationQueryUserRequestDto);
+    public ResponseResult<Page<UserEntity>>paginationQueryUser(@Validated @RequestBody PaginationQueryUserRequestDto paginationQueryUserRequestDto){
+        return userService.paginationQueryUser(paginationQueryUserRequestDto);
     }
 }

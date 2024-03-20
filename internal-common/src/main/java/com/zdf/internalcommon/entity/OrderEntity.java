@@ -14,6 +14,6 @@ import javax.persistence.*;
 public class OrderEntity {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long oid;
+  private Long oid;
   private String onumber;
 }
