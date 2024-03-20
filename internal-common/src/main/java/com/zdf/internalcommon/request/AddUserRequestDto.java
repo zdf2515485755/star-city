@@ -27,4 +27,6 @@ public class AddUserRequestDto{
     private String uphone;
     private String udesc;
     private Integer ustatus;
+    @NotBlank(message = "The rid cannot be empty")
+    private String rid;
 }

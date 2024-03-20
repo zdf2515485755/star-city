@@ -1,4 +1,4 @@
-package com.zdf.internalcommon.entity;
+package com.zdf.trafficsystem.user.entity;
 
 import lombok.Data;
 
@@ -14,8 +14,11 @@ import javax.persistence.*;
 public class RoleEntity {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long rid;
+  private Long rid;
+  @Column(name = "rname")
   private String rname;
-  private long rtype;
+  @Column(name = "rtype")
+  private Integer rtype;
+  @Column(name = "rdesc")
   private String rdesc;
 }

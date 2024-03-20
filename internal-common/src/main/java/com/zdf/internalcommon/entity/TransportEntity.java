@@ -14,5 +14,5 @@ import javax.persistence.*;
 public class TransportEntity {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long tid;
+  private Long tid;
 }

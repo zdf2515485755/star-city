@@ -8,7 +8,9 @@ import com.zdf.internalcommon.request.PaginationQueryUserRequestDto;
 import com.zdf.internalcommon.request.UpdateUserRequestDto;
 import com.zdf.internalcommon.result.ResponseResult;
 import com.zdf.internalcommon.util.JpaUtil;
+import com.zdf.trafficsystem.user.entity.RoleEntity;
 import com.zdf.trafficsystem.user.entity.UserEntity;
+import com.zdf.trafficsystem.user.repo.RoleRepository;
 import com.zdf.trafficsystem.user.repo.UserRepository;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.slf4j.Logger;
@@ -23,7 +25,11 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.criteria.*;
+import javax.annotation.Resource;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 import java.time.LocalDateTime;
 import java.util.*;
 
@@ -34,8 +40,10 @@ import java.util.*;
  */
 @Service
 public class UserService {
-
-    private final UserRepository userRepository;
+    @Resource
+    private UserRepository userRepository;
+    @Resource
+    private RoleRepository roleRepository;
     private final Logger logger = LoggerFactory.getLogger(UserService.class);
     @Autowired
     public UserService(UserRepository userRepository) {
@@ -43,22 +51,34 @@ public class UserService {
     }
 
     public ResponseResult<Boolean> addUser(AddUserRequestDto addUserRequestDto){
-        logger.info("Start performing the operation of adding users");
+        logger.info("Start performing the operation of adding user");
         UserEntity userEntity = new UserEntity();
         userEntity.setUtime(LocalDateTime.now());
         BeanUtils.copyProperties(addUserRequestDto, userEntity);
         userEntity.setUpass(DigestUtils.md5Hex(addUserRequestDto.getUpass()));
         try {
+            String[] ridList = userEntity.getRid().split(",");
+            for (String str : ridList){
+                Integer.parseInt(str);
+                Optional<RoleEntity> roleEntityOptional = roleRepository.findById(Long.parseLong(str));
+                if (!roleEntityOptional.isPresent()){
+                    return ResponseResult.fail(StatusCode.ROLE_ID_IS_NOT_EXIT.getCode(), StatusCode.ROLE_ID_IS_NOT_EXIT.getMessage(), Boolean.FALSE);
+                }
+            }
             userRepository.save(userEntity);
-            logger.info("end performing the operation of adding users");
+            logger.info("add user success");
+        }catch (NumberFormatException e){
+            logger.error("rid format is valid");
+            return ResponseResult.fail(StatusCode.ROLE_ID_FORMAT_IS_VALID.getCode(), StatusCode.ROLE_ID_FORMAT_IS_VALID.getMessage(), Boolean.FALSE);
         }catch (Exception e){
             logger.error("add user error");
-            return ResponseResult.fail(Boolean.FALSE);
+            return ResponseResult.fail(StatusCode.SYSTEM_USER_ADD_ERROR.getCode(), StatusCode.SYSTEM_USER_ADD_ERROR.getMessage(), Boolean.FALSE);
         }
         return ResponseResult.success(Boolean.TRUE);
     }
 
     public ResponseResult<Boolean>deleteUserByUid(Integer uid){
+        logger.info("Start performing the operation of deleting user");
         Optional<UserEntity> userEntityOptional = userRepository.findById(uid.longValue());
         if (userEntityOptional.isPresent()){
             UserEntity userEntity = userEntityOptional.get();
@@ -67,10 +87,10 @@ public class UserService {
             userEntity.setUtime(LocalDateTime.now());
             try{
                 userRepository.save(userEntity);
-                logger.info("delete user status succes");
+                logger.info("delete user success");
             }catch (Exception e){
-                logger.error("delete user status fail");
-                return ResponseResult.fail(Boolean.FALSE);
+                logger.error("delete user fail");
+                return ResponseResult.fail(StatusCode.SYSTEM_USER_DELETE_ERROR.getCode(), StatusCode.SYSTEM_USER_DELETE_ERROR.getMessage(), Boolean.FALSE);
             }
             return ResponseResult.success(Boolean.TRUE);
         }
@@ -79,6 +99,7 @@ public class UserService {
     }
 
     public ResponseResult<Boolean>batchDeleteUserByUid(BatchDeleteUserRequestDto batchDeleteUserRequestDto){
+        logger.info("Start performing the operation of deleting user");
         List<Long> uidList = batchDeleteUserRequestDto.getUidList();
         if (Objects.isNull(uidList) || uidList.isEmpty()){
             logger.error("uidList is empty");
@@ -95,15 +116,16 @@ public class UserService {
         });
         try{
             userRepository.saveAll(userEntityList);
-            logger.info("delete user status succes");
+            logger.info("delete user success");
         }catch (Exception e){
-            logger.error("delete user status fail");
-            return ResponseResult.fail(Boolean.FALSE);
+            logger.error("delete user fail");
+            return ResponseResult.fail(StatusCode.SYSTEM_USER_DELETE_ERROR.getCode(), StatusCode.SYSTEM_USER_DELETE_ERROR.getMessage(), Boolean.FALSE);
         }
         return ResponseResult.success(Boolean.TRUE);
     }
 
     public ResponseResult<Boolean>updateUser(UpdateUserRequestDto updateUserRequestDto){
+        logger.info("Start performing the operation of updating user");
         Optional<UserEntity> userEntityOptional = userRepository.findById(updateUserRequestDto.getUid());
         if (userEntityOptional.isPresent()){
             JpaUtil.copyNotNullProperties(updateUserRequestDto, userEntityOptional.get());
@@ -113,7 +135,7 @@ public class UserService {
                 logger.info("update user success");
             }catch (Exception e){
                 logger.error("update user fail");
-                return ResponseResult.fail(Boolean.FALSE);
+                return ResponseResult.fail(StatusCode.SYSTEM_USER_UPDATE_ERROR.getCode(), StatusCode.SYSTEM_USER_UPDATE_ERROR.getMessage(), Boolean.FALSE);
             }
             return ResponseResult.success(Boolean.TRUE);
         }
@@ -125,7 +147,8 @@ public class UserService {
         return ResponseResult.success(userRepository.findAll());
     }
 
-    public ResponseResult<Page<UserEntity>>paginationQueryrUser(PaginationQueryUserRequestDto paginationQueryUserRequestDto){
+    public ResponseResult<Page<UserEntity>>paginationQueryUser(PaginationQueryUserRequestDto paginationQueryUserRequestDto){
+        logger.info("Start performing the operation of querying user");
         if (Objects.isNull(paginationQueryUserRequestDto)){
             return ResponseResult.fail(new ArrayList<>());
         }
@@ -156,6 +179,7 @@ public class UserService {
         };
 
         Page<UserEntity> resultPage = userRepository.findAll(specification, pageRequest);
+        logger.info("query user success");
         return ResponseResult.success(resultPage);
     }
 }

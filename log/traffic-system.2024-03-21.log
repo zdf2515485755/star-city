@@ -1,0 +1,423 @@
+2024-03-21 00:43:41.516 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-03-21 00:43:46.530 [main] WARN  org.springframework.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 00:43:51.532 [main] WARN  org.springframework.boot.system.ApplicationPid - ManagementFactory.getRuntimeMXBean().getName() took 5001 milliseconds to respond. This may be due to slow host name resolution. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 00:43:51.540 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Starting TrafficSystemApplication using Java 1.8.0_401 on MrdeMacBook-Pro.local with PID 22427 (/Users/mrzhang/Desktop/Project/star-city/traffic-system/target/classes started by mrzhang in /Users/mrzhang/Desktop/Project/star-city)
+2024-03-21 00:43:51.541 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - The following 1 profile is active: "dev"
+2024-03-21 00:43:52.298 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21 00:43:52.369 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
+2024-03-21 00:43:52.965 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-03-21 00:43:52.977 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-03-21 00:43:52.979 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 00:43:52.979 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-03-21 00:43:53.244 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-21 00:43:53.244 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1645 ms
+2024-03-21 00:43:53.354 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 00:43:53.833 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 00:43:53.916 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21 00:43:54.001 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-21 00:43:54.240 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-21 00:43:54.417 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-21 00:43:55.128 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-21 00:43:55.144 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 00:43:55.513 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21 00:43:55.902 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2024-03-21 00:43:55.933 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-21 00:43:55.944 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Started TrafficSystemApplication in 25.058 seconds (JVM running for 30.868)
+2024-03-21 00:44:22.741 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 00:44:22.742 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 00:44:22.743 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-21 00:48:31.580 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 00:48:31.618 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 00:48:31.643 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 00:48:59.031 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-03-21 00:49:04.035 [main] WARN  org.springframework.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 00:49:09.039 [main] WARN  org.springframework.boot.system.ApplicationPid - ManagementFactory.getRuntimeMXBean().getName() took 5002 milliseconds to respond. This may be due to slow host name resolution. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 00:49:09.040 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Starting TrafficSystemApplication using Java 1.8.0_401 on MrdeMacBook-Pro.local with PID 22486 (/Users/mrzhang/Desktop/Project/star-city/traffic-system/target/classes started by mrzhang in /Users/mrzhang/Desktop/Project/star-city)
+2024-03-21 00:49:09.041 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - The following 1 profile is active: "dev"
+2024-03-21 00:49:09.540 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21 00:49:09.586 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2024-03-21 00:49:10.039 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-03-21 00:49:10.046 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-03-21 00:49:10.047 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 00:49:10.047 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-03-21 00:49:10.271 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-21 00:49:10.272 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1194 ms
+2024-03-21 00:49:10.360 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 00:49:10.704 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 00:49:10.746 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21 00:49:10.785 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-21 00:49:11.013 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-21 00:49:11.144 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-21 00:49:11.689 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-21 00:49:11.700 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 00:49:12.040 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21 00:49:12.344 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2024-03-21 00:49:12.364 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-21 00:49:12.372 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Started TrafficSystemApplication in 23.78 seconds (JVM running for 29.453)
+2024-03-21 00:49:25.859 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 00:49:25.859 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 00:49:25.861 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-21 00:49:25.886 [http-nio-8081-exec-1] INFO  com.zdf.trafficsystem.user.service.RoleService - Start performing the operation of querying role
+2024-03-21 00:50:12.501 [http-nio-8081-exec-2] INFO  com.zdf.trafficsystem.user.service.RoleService - Start performing the operation of adding role
+2024-03-21 00:50:12.529 [http-nio-8081-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - []
+2024-03-21 00:50:12.529 [http-nio-8081-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [zdf]
+2024-03-21 00:50:12.530 [http-nio-8081-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [0]
+2024-03-21 00:50:12.586 [http-nio-8081-exec-2] INFO  com.zdf.trafficsystem.user.service.RoleService - add role succes
+2024-03-21 00:50:43.712 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 00:50:43.715 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 00:50:43.728 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 00:54:45.743 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-03-21 00:54:50.715 [main] WARN  org.springframework.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 00:54:55.718 [main] WARN  org.springframework.boot.system.ApplicationPid - ManagementFactory.getRuntimeMXBean().getName() took 5002 milliseconds to respond. This may be due to slow host name resolution. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 00:54:55.727 [main] INFO  c.zdf.trafficsystem.TrafficSystemApplicationTests - Starting TrafficSystemApplicationTests using Java 1.8.0_401 on MrdeMacBook-Pro.local with PID 22543 (started by mrzhang in /Users/mrzhang/Desktop/Project/star-city/traffic-system)
+2024-03-21 00:54:55.728 [main] INFO  c.zdf.trafficsystem.TrafficSystemApplicationTests - The following 1 profile is active: "dev"
+2024-03-21 00:54:56.477 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21 00:54:56.549 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 3 JPA repository interfaces.
+2024-03-21 00:54:57.246 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 00:54:57.997 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 00:54:58.209 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21 00:54:58.359 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-21 00:54:58.718 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-21 00:54:58.989 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-21 00:55:00.216 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-21 00:55:00.243 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 00:55:01.224 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21 00:55:02.300 [main] INFO  c.zdf.trafficsystem.TrafficSystemApplicationTests - Started TrafficSystemApplicationTests in 27.203 seconds (JVM running for 29.209)
+2024-03-21 00:55:02.462 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 00:55:02.465 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 00:55:02.481 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 00:56:10.143 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-03-21 00:56:15.121 [main] WARN  org.springframework.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5007 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 00:56:20.125 [main] WARN  org.springframework.boot.system.ApplicationPid - ManagementFactory.getRuntimeMXBean().getName() took 5002 milliseconds to respond. This may be due to slow host name resolution. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 00:56:20.132 [main] INFO  c.zdf.trafficsystem.TrafficSystemApplicationTests - Starting TrafficSystemApplicationTests using Java 1.8.0_401 on MrdeMacBook-Pro.local with PID 22559 (started by mrzhang in /Users/mrzhang/Desktop/Project/star-city/traffic-system)
+2024-03-21 00:56:20.137 [main] INFO  c.zdf.trafficsystem.TrafficSystemApplicationTests - The following 1 profile is active: "dev"
+2024-03-21 00:56:20.847 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21 00:56:20.924 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 3 JPA repository interfaces.
+2024-03-21 00:56:21.719 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 00:56:22.572 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 00:56:22.677 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21 00:56:22.933 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-21 00:56:23.224 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-21 00:56:23.518 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-21 00:56:24.920 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-21 00:56:24.941 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 00:56:25.947 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21 00:56:27.104 [main] INFO  c.zdf.trafficsystem.TrafficSystemApplicationTests - Started TrafficSystemApplicationTests in 27.698 seconds (JVM running for 30.477)
+2024-03-21 00:56:38.013 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 00:56:38.016 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 00:56:38.043 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 00:57:04.965 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-03-21 00:57:09.969 [main] WARN  org.springframework.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 00:57:14.972 [main] WARN  org.springframework.boot.system.ApplicationPid - ManagementFactory.getRuntimeMXBean().getName() took 5002 milliseconds to respond. This may be due to slow host name resolution. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 00:57:14.979 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Starting TrafficSystemApplication using Java 1.8.0_401 on MrdeMacBook-Pro.local with PID 22570 (/Users/mrzhang/Desktop/Project/star-city/traffic-system/target/classes started by mrzhang in /Users/mrzhang/Desktop/Project/star-city)
+2024-03-21 00:57:14.980 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - The following 1 profile is active: "dev"
+2024-03-21 00:57:15.514 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21 00:57:15.560 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 3 JPA repository interfaces.
+2024-03-21 00:57:16.046 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-03-21 00:57:16.055 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-03-21 00:57:16.057 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 00:57:16.058 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-03-21 00:57:16.332 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-21 00:57:16.332 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1315 ms
+2024-03-21 00:57:16.434 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 00:57:16.744 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 00:57:16.779 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21 00:57:16.813 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-21 00:57:16.965 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-21 00:57:17.096 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-21 00:57:17.603 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-21 00:57:17.614 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 00:57:17.895 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21 00:57:18.216 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2024-03-21 00:57:18.245 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-21 00:57:18.256 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Started TrafficSystemApplication in 23.691 seconds (JVM running for 29.359)
+2024-03-21 00:57:30.779 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 00:57:30.779 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 00:57:30.780 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-21 00:57:30.940 [http-nio-8081-exec-1] INFO  com.zdf.trafficsystem.user.service.UserService - Start performing the operation of adding user
+2024-03-21 00:57:30.988 [http-nio-8081-exec-1] ERROR com.zdf.trafficsystem.user.service.UserService - add user error
+2024-03-21 01:00:01.618 [http-nio-8081-exec-3] INFO  com.zdf.trafficsystem.user.service.UserService - Start performing the operation of adding user
+2024-03-21 01:00:01.627 [http-nio-8081-exec-3] ERROR com.zdf.trafficsystem.user.service.UserService - add user error
+2024-03-21 01:00:12.690 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:00:12.694 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 01:00:12.717 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 01:01:38.773 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-03-21 01:01:43.771 [main] WARN  org.springframework.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 01:01:48.774 [main] WARN  org.springframework.boot.system.ApplicationPid - ManagementFactory.getRuntimeMXBean().getName() took 5002 milliseconds to respond. This may be due to slow host name resolution. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 01:01:48.782 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Starting TrafficSystemApplication using Java 1.8.0_401 on MrdeMacBook-Pro.local with PID 22613 (/Users/mrzhang/Desktop/Project/star-city/traffic-system/target/classes started by mrzhang in /Users/mrzhang/Desktop/Project/star-city)
+2024-03-21 01:01:48.783 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - The following 1 profile is active: "dev"
+2024-03-21 01:01:49.545 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21 01:01:49.611 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2024-03-21 01:01:50.276 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-03-21 01:01:50.289 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-03-21 01:01:50.291 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 01:01:50.292 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-03-21 01:01:50.604 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-21 01:01:50.604 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1770 ms
+2024-03-21 01:01:50.737 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 01:01:51.267 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 01:01:51.325 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21 01:01:51.422 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-21 01:01:51.700 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-21 01:01:51.916 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-21 01:01:52.887 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-21 01:01:52.907 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:01:53.399 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21 01:01:54.013 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2024-03-21 01:01:54.042 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-21 01:01:54.051 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Started TrafficSystemApplication in 26.057 seconds (JVM running for 32.109)
+2024-03-21 01:02:08.845 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 01:02:08.846 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 01:02:08.847 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-21 01:02:09.070 [http-nio-8081-exec-1] INFO  com.zdf.trafficsystem.user.service.UserService - Start performing the operation of adding user
+2024-03-21 01:04:33.237 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m6s907ms).
+2024-03-21 01:04:33.236 [http-nio-8081-exec-1] ERROR com.zdf.trafficsystem.user.service.UserService - add user error
+2024-03-21 01:04:33.620 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:04:33.636 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 01:04:33.667 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 01:09:03.644 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-03-21 01:09:08.638 [main] WARN  org.springframework.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 01:09:13.643 [main] WARN  org.springframework.boot.system.ApplicationPid - ManagementFactory.getRuntimeMXBean().getName() took 5001 milliseconds to respond. This may be due to slow host name resolution. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 01:09:13.651 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Starting TrafficSystemApplication using Java 1.8.0_401 on MrdeMacBook-Pro.local with PID 22681 (/Users/mrzhang/Desktop/Project/star-city/traffic-system/target/classes started by mrzhang in /Users/mrzhang/Desktop/Project/star-city)
+2024-03-21 01:09:13.651 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - The following 1 profile is active: "dev"
+2024-03-21 01:09:14.255 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21 01:09:14.328 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces.
+2024-03-21 01:09:14.844 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-03-21 01:09:14.849 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-03-21 01:09:14.850 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 01:09:14.851 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-03-21 01:09:15.072 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-21 01:09:15.072 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1387 ms
+2024-03-21 01:09:15.178 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 01:09:15.654 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 01:09:15.708 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21 01:09:15.780 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-21 01:09:16.017 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-21 01:09:16.187 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-21 01:09:16.978 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-21 01:09:16.996 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:09:17.328 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21 01:09:17.627 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2024-03-21 01:09:17.648 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-21 01:09:17.656 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Started TrafficSystemApplication in 24.572 seconds (JVM running for 30.287)
+2024-03-21 01:09:29.133 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 01:09:29.134 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 01:09:29.135 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-21 01:09:29.324 [http-nio-8081-exec-1] INFO  com.zdf.trafficsystem.user.service.UserService - Start performing the operation of adding user
+2024-03-21 01:09:29.387 [http-nio-8081-exec-1] ERROR com.zdf.trafficsystem.user.service.UserService - add user error
+2024-03-21 01:09:45.879 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:09:45.888 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 01:09:45.952 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 01:10:09.946 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-03-21 01:10:14.953 [main] WARN  org.springframework.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 01:10:19.957 [main] WARN  org.springframework.boot.system.ApplicationPid - ManagementFactory.getRuntimeMXBean().getName() took 5003 milliseconds to respond. This may be due to slow host name resolution. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 01:10:19.958 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Starting TrafficSystemApplication using Java 1.8.0_401 on MrdeMacBook-Pro.local with PID 22698 (/Users/mrzhang/Desktop/Project/star-city/traffic-system/target/classes started by mrzhang in /Users/mrzhang/Desktop/Project/star-city)
+2024-03-21 01:10:19.959 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - The following 1 profile is active: "dev"
+2024-03-21 01:10:20.577 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21 01:10:20.637 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
+2024-03-21 01:10:21.134 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-03-21 01:10:21.140 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-03-21 01:10:21.141 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 01:10:21.142 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-03-21 01:10:21.378 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-21 01:10:21.379 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1379 ms
+2024-03-21 01:10:21.485 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 01:10:21.857 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 01:10:21.893 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21 01:10:21.933 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-21 01:10:22.112 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-21 01:10:22.250 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-21 01:10:22.933 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-21 01:10:22.944 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:10:23.264 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21 01:10:23.798 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2024-03-21 01:10:23.820 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-21 01:10:23.830 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Started TrafficSystemApplication in 24.539 seconds (JVM running for 30.762)
+2024-03-21 01:10:49.414 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 01:10:49.415 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 01:10:49.416 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-21 01:10:49.589 [http-nio-8081-exec-1] INFO  com.zdf.trafficsystem.user.service.UserService - Start performing the operation of adding user
+2024-03-21 01:11:14.032 [http-nio-8081-exec-1] ERROR com.zdf.trafficsystem.user.service.UserService - add user error
+2024-03-21 01:11:14.359 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:11:14.364 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 01:11:14.402 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 01:19:00.410 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-03-21 01:19:05.405 [main] WARN  org.springframework.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 01:19:10.407 [main] WARN  org.springframework.boot.system.ApplicationPid - ManagementFactory.getRuntimeMXBean().getName() took 5001 milliseconds to respond. This may be due to slow host name resolution. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 01:19:10.415 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Starting TrafficSystemApplication using Java 1.8.0_401 on MrdeMacBook-Pro.local with PID 22862 (/Users/mrzhang/Desktop/Project/star-city/traffic-system/target/classes started by mrzhang in /Users/mrzhang/Desktop/Project/star-city)
+2024-03-21 01:19:10.417 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - The following 1 profile is active: "dev"
+2024-03-21 01:19:11.037 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21 01:19:11.088 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2024-03-21 01:19:11.536 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-03-21 01:19:11.542 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-03-21 01:19:11.543 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 01:19:11.543 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-03-21 01:19:11.733 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-21 01:19:11.733 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1281 ms
+2024-03-21 01:19:11.843 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 01:19:12.334 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 01:19:12.384 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21 01:19:12.457 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-21 01:19:12.738 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-21 01:19:12.913 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-21 01:19:13.667 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-21 01:19:13.684 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:19:14.004 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21 01:19:14.324 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2024-03-21 01:19:14.348 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-21 01:19:14.358 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Started TrafficSystemApplication in 24.498 seconds (JVM running for 30.257)
+2024-03-21 01:19:48.912 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 01:19:48.913 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 01:19:48.914 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-21 01:19:49.092 [http-nio-8081-exec-1] INFO  com.zdf.trafficsystem.user.service.UserService - Start performing the operation of adding user
+2024-03-21 01:19:49.157 [http-nio-8081-exec-1] ERROR com.zdf.trafficsystem.user.service.UserService - add user error
+2024-03-21 01:21:47.703 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:21:47.716 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 01:21:47.785 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 01:22:14.557 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-03-21 01:22:19.558 [main] WARN  org.springframework.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 01:22:24.561 [main] WARN  org.springframework.boot.system.ApplicationPid - ManagementFactory.getRuntimeMXBean().getName() took 5002 milliseconds to respond. This may be due to slow host name resolution. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 01:22:24.565 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Starting TrafficSystemApplication using Java 1.8.0_401 on MrdeMacBook-Pro.local with PID 22900 (/Users/mrzhang/Desktop/Project/star-city/traffic-system/target/classes started by mrzhang in /Users/mrzhang/Desktop/Project/star-city)
+2024-03-21 01:22:24.566 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - The following 1 profile is active: "dev"
+2024-03-21 01:22:25.153 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21 01:22:25.208 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2024-03-21 01:22:25.654 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-03-21 01:22:25.659 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-03-21 01:22:25.660 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 01:22:25.660 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-03-21 01:22:25.937 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-21 01:22:25.938 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1297 ms
+2024-03-21 01:22:26.034 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 01:22:26.395 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 01:22:26.435 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21 01:22:26.471 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-21 01:22:26.757 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-21 01:22:26.905 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-21 01:22:27.512 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-21 01:22:27.521 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:22:27.840 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21 01:22:28.139 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2024-03-21 01:22:28.160 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-21 01:22:28.171 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Started TrafficSystemApplication in 24.063 seconds (JVM running for 29.747)
+2024-03-21 01:22:45.932 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 01:22:45.932 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 01:22:45.934 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-21 01:22:46.099 [http-nio-8081-exec-1] INFO  com.zdf.trafficsystem.user.service.UserService - Start performing the operation of adding user
+2024-03-21 01:22:46.166 [http-nio-8081-exec-1] ERROR com.zdf.trafficsystem.user.service.UserService - add user error
+2024-03-21 01:24:20.595 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:24:20.612 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 01:24:20.654 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 01:26:25.640 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-03-21 01:26:30.635 [main] WARN  org.springframework.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 01:26:35.638 [main] WARN  org.springframework.boot.system.ApplicationPid - ManagementFactory.getRuntimeMXBean().getName() took 5002 milliseconds to respond. This may be due to slow host name resolution. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 01:26:35.642 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Starting TrafficSystemApplication using Java 1.8.0_401 on MrdeMacBook-Pro.local with PID 22973 (/Users/mrzhang/Desktop/Project/star-city/traffic-system/target/classes started by mrzhang in /Users/mrzhang/Desktop/Project/star-city)
+2024-03-21 01:26:35.643 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - The following 1 profile is active: "dev"
+2024-03-21 01:26:36.238 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21 01:26:36.283 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+2024-03-21 01:26:36.769 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-03-21 01:26:36.775 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-03-21 01:26:36.776 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 01:26:36.776 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-03-21 01:26:36.974 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-21 01:26:36.976 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1291 ms
+2024-03-21 01:26:37.083 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 01:26:37.570 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 01:26:37.626 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21 01:26:37.699 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-21 01:26:37.919 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-21 01:26:38.088 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-21 01:26:38.882 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-21 01:26:38.898 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:26:39.221 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21 01:26:39.485 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2024-03-21 01:26:39.506 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-21 01:26:39.515 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Started TrafficSystemApplication in 24.413 seconds (JVM running for 30.185)
+2024-03-21 01:27:23.313 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 01:27:23.314 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 01:27:23.316 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-03-21 01:27:23.503 [http-nio-8081-exec-1] INFO  com.zdf.trafficsystem.user.service.UserService - Start performing the operation of adding user
+2024-03-21 01:27:23.602 [http-nio-8081-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-03-21 01:31:12.252 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:31:12.266 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 01:31:12.298 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 01:31:39.830 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-03-21 01:31:44.833 [main] WARN  org.springframework.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 01:31:49.836 [main] WARN  org.springframework.boot.system.ApplicationPid - ManagementFactory.getRuntimeMXBean().getName() took 5002 milliseconds to respond. This may be due to slow host name resolution. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 01:31:49.843 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Starting TrafficSystemApplication using Java 1.8.0_401 on MrdeMacBook-Pro.local with PID 23031 (/Users/mrzhang/Desktop/Project/star-city/traffic-system/target/classes started by mrzhang in /Users/mrzhang/Desktop/Project/star-city)
+2024-03-21 01:31:49.844 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - The following 1 profile is active: "dev"
+2024-03-21 01:31:50.362 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21 01:31:50.404 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+2024-03-21 01:31:50.813 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-03-21 01:31:50.818 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-03-21 01:31:50.819 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 01:31:50.820 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-03-21 01:31:51.032 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-21 01:31:51.033 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1157 ms
+2024-03-21 01:31:51.119 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 01:31:51.428 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 01:31:51.461 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21 01:31:51.494 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-21 01:31:51.629 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-21 01:31:51.756 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-21 01:31:52.237 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-21 01:31:52.247 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:31:52.517 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21 01:31:52.777 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2024-03-21 01:31:52.801 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-21 01:31:52.815 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Started TrafficSystemApplication in 23.398 seconds (JVM running for 29.008)
+2024-03-21 01:32:06.658 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 01:32:06.659 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 01:32:06.660 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-21 01:32:06.804 [http-nio-8081-exec-1] INFO  com.zdf.trafficsystem.user.service.UserService - Start performing the operation of adding user
+2024-03-21 01:32:06.869 [http-nio-8081-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-03-21 01:32:06.929 [http-nio-8081-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2024-03-21 01:32:06.975 [http-nio-8081-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1,2]
+2024-03-21 01:32:06.976 [http-nio-8081-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [null]
+2024-03-21 01:32:06.977 [http-nio-8081-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [zhang]
+2024-03-21 01:32:06.977 [http-nio-8081-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [in velit]
+2024-03-21 01:32:06.977 [http-nio-8081-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [i.cepnmpv@qq.com]
+2024-03-21 01:32:06.977 [http-nio-8081-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [6] as [VARCHAR] - [所思表西流]
+2024-03-21 01:32:06.977 [http-nio-8081-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [7] as [VARCHAR] - [bfb6e3c9912e182559bb714ebcda36f6]
+2024-03-21 01:32:06.977 [http-nio-8081-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [8] as [VARCHAR] - [18662319550]
+2024-03-21 01:32:06.978 [http-nio-8081-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [9] as [INTEGER] - [0]
+2024-03-21 01:32:06.979 [http-nio-8081-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [10] as [TIMESTAMP] - [2024-03-21T01:32:06.808]
+2024-03-21 01:32:07.027 [http-nio-8081-exec-1] INFO  com.zdf.trafficsystem.user.service.UserService - add user success
+2024-03-21 01:32:35.568 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:32:35.571 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 01:32:35.586 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-21 01:41:53.868 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-03-21 01:41:58.860 [main] WARN  org.springframework.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5001 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 01:42:03.864 [main] WARN  org.springframework.boot.system.ApplicationPid - ManagementFactory.getRuntimeMXBean().getName() took 5003 milliseconds to respond. This may be due to slow host name resolution. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-21 01:42:03.872 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Starting TrafficSystemApplication using Java 1.8.0_401 on MrdeMacBook-Pro.local with PID 23336 (/Users/mrzhang/Desktop/Project/star-city/traffic-system/target/classes started by mrzhang in /Users/mrzhang/Desktop/Project/star-city)
+2024-03-21 01:42:03.873 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - The following 1 profile is active: "dev"
+2024-03-21 01:42:04.485 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21 01:42:04.536 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2024-03-21 01:42:05.023 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-03-21 01:42:05.029 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-03-21 01:42:05.031 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 01:42:05.031 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-03-21 01:42:05.252 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-21 01:42:05.252 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1342 ms
+2024-03-21 01:42:05.365 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 01:42:05.850 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 01:42:05.902 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21 01:42:05.971 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-21 01:42:06.210 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-21 01:42:06.375 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-21 01:42:07.124 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-21 01:42:07.140 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:42:07.485 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21 01:42:07.768 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2024-03-21 01:42:07.790 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2024-03-21 01:42:07.799 [main] INFO  com.zdf.trafficsystem.TrafficSystemApplication - Started TrafficSystemApplication in 24.523 seconds (JVM running for 30.358)
+2024-03-21 01:42:24.854 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 01:42:24.855 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 01:42:24.856 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-21 01:42:25.051 [http-nio-8081-exec-1] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.zdf.internalcommon.result.ResponseResult<java.lang.Boolean> com.zdf.trafficsystem.user.controller.UserController.addUser(com.zdf.internalcommon.request.AddUserRequestDto): [Field error in object 'addUserRequestDto' on field 'rid': rejected value []; codes [NotBlank.addUserRequestDto.rid,NotBlank.rid,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [addUserRequestDto.rid,rid]; arguments []; default message [rid]]; default message [The rid cannot be empty]] ]
+2024-03-21 01:43:01.089 [http-nio-8081-exec-2] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): expected a value<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 10, column: 2]]
+2024-03-21 01:43:26.465 [http-nio-8081-exec-3] INFO  com.zdf.trafficsystem.user.service.UserService - Start performing the operation of adding user
+2024-03-21 01:43:26.550 [http-nio-8081-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2024-03-21 01:43:26.597 [http-nio-8081-exec-3] ERROR com.zdf.trafficsystem.user.service.UserService - rid format is valid
+2024-03-21 01:43:34.922 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:43:34.932 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 01:43:34.955 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

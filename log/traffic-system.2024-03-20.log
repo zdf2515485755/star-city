@@ -1,0 +1,40 @@
+2024-03-20 23:03:09.155 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-03-20 23:03:14.134 [main] WARN  org.springframework.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5003 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-20 23:03:19.137 [main] WARN  org.springframework.boot.system.ApplicationPid - ManagementFactory.getRuntimeMXBean().getName() took 5001 milliseconds to respond. This may be due to slow host name resolution. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-20 23:03:19.145 [main] INFO  c.zdf.trafficsystem.TrafficSystemApplicationTests - Starting TrafficSystemApplicationTests using Java 1.8.0_401 on MrdeMacBook-Pro.local with PID 21536 (started by mrzhang in /Users/mrzhang/Desktop/Project/star-city/traffic-system)
+2024-03-20 23:03:19.145 [main] INFO  c.zdf.trafficsystem.TrafficSystemApplicationTests - The following 1 profile is active: "dev"
+2024-03-20 23:03:19.960 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-20 23:03:20.053 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 3 JPA repository interfaces.
+2024-03-20 23:03:20.757 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-20 23:03:21.450 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-20 23:03:21.563 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-20 23:03:21.728 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-20 23:03:22.047 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-20 23:03:22.276 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-20 23:03:23.351 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-20 23:03:23.371 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-20 23:03:24.274 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-20 23:03:25.103 [main] INFO  c.zdf.trafficsystem.TrafficSystemApplicationTests - Started TrafficSystemApplicationTests in 26.537 seconds (JVM running for 28.623)
+2024-03-20 23:03:25.312 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-20 23:03:25.315 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-20 23:03:25.330 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-20 23:05:31.426 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-03-20 23:05:36.420 [main] WARN  org.springframework.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-20 23:05:41.422 [main] WARN  org.springframework.boot.system.ApplicationPid - ManagementFactory.getRuntimeMXBean().getName() took 5001 milliseconds to respond. This may be due to slow host name resolution. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2024-03-20 23:05:41.424 [main] INFO  c.zdf.trafficsystem.TrafficSystemApplicationTests - Starting TrafficSystemApplicationTests using Java 1.8.0_401 on MrdeMacBook-Pro.local with PID 21564 (started by mrzhang in /Users/mrzhang/Desktop/Project/star-city/traffic-system)
+2024-03-20 23:05:41.425 [main] INFO  c.zdf.trafficsystem.TrafficSystemApplicationTests - The following 1 profile is active: "dev"
+2024-03-20 23:05:42.029 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-20 23:05:42.091 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2024-03-20 23:05:42.758 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-20 23:05:43.414 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-20 23:05:43.571 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-20 23:05:43.699 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-20 23:05:43.980 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-20 23:05:44.168 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-20 23:05:45.144 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-20 23:05:45.155 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-20 23:05:46.022 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-20 23:05:46.851 [main] INFO  c.zdf.trafficsystem.TrafficSystemApplicationTests - Started TrafficSystemApplicationTests in 25.989 seconds (JVM running for 27.733)
+2024-03-20 23:05:47.016 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-20 23:05:47.019 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-20 23:05:47.039 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

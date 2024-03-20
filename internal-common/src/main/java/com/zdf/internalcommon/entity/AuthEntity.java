@@ -14,9 +14,9 @@ import javax.persistence.*;
 public class AuthEntity {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long aid;
+  private Long aid;
   private String aname;
   private String apath;
-  private long atype;
-  private long pid;
+  private Long atype;
+  private Long pid;
 }
