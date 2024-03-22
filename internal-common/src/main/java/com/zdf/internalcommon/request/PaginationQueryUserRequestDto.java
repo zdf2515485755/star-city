@@ -10,7 +10,7 @@ import javax.validation.constraints.Pattern;
 import java.time.LocalDateTime;
 
 /**
- *@Description 类功能简要描述
+ *@Description Pagination Query User Request
  *@Author mrzhang
  *@Date 2024/3/18 19:34
  */

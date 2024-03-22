@@ -4,7 +4,7 @@ import lombok.Getter;
 
 /**
  * @author mrzhang
- * @description status code
+ * @description Status code
  * @date 2024/3/16 19:43
  */
 @Getter
@@ -19,8 +19,9 @@ public enum StatusCode {
     SYSTEM_ROLE_ADD_ERROR(10004, "SYSTEM ROLE ADD ERROR"),
     CUSTOMER_ADD_ERROR(10005, "CUSTOMER ADD ERROR"),
     SYSTEM_ROLE_ID_IS_NULL(10006, "ROLE ID IS NULL"),
-    ROLE_ID_IS_NOT_EXIT(10007, "role id is not exit"),
-    ROLE_ID_FORMAT_IS_VALID(10007, "ROLE_ID_FORMAT_IS_VALID");
+    ROLE_ID_IS_NOT_EXIT(10007, "ROLE ID IS NOT EXIT"),
+    ROLE_ID_FORMAT_IS_VALID(10008, "ROLE ID FORMAT IS VALID"),
+    USER_IS_NOT_EXIT(10009, "USER IS NOT EXIT");
 
 
     private final int code;

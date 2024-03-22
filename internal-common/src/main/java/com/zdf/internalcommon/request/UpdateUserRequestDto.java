@@ -8,7 +8,7 @@ import javax.validation.constraints.Pattern;
 import java.time.LocalDateTime;
 
 /**
- *@Description update user request class
+ *@Description Update user request class
  *@Author mrzhang
  *@Date 2024/3/16 21:01
  */

@@ -8,7 +8,6 @@
         <artifactId>traffic-master</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.zdf</groupId>
     <artifactId>traffic-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>traffic-web</name>
@@ -19,7 +18,11 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
     <dependencies>
-
+        <dependency>
+            <groupId>com.zdf</groupId>
+            <artifactId>internal-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>

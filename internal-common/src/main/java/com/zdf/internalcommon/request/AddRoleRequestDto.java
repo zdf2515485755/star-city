@@ -6,7 +6,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 /**
- *@Description 类功能简要描述
+ *@Description Add role request
  *@Author mrzhang
  *@Date 2024/3/20 16:48
  */

@@ -8,7 +8,7 @@ import java.beans.PropertyDescriptor;
 import java.util.stream.Stream;
 
 /**
- *@Description jpa utils class,Implemented dynamic updates
+ *@Description Jpa utils class,Implemented dynamic updates
  *@Author mrzhang
  *@Date 2024/3/17 18:48
  */

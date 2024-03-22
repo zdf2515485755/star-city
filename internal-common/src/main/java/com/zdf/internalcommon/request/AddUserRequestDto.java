@@ -8,7 +8,7 @@ import javax.validation.constraints.Pattern;
 
 /**
  * @author mrzhang
- * @description add user request class
+ * @description Add user request
  * @date 2024/3/16 19:43
  */
 @Data
