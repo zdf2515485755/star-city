@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 /**
- *@Description 类功能简要描述
+ *@Description Datatime range check validator
  *@Author mrzhang
  *@Date 2024/3/18 19:42
  */

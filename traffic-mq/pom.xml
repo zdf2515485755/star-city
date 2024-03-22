@@ -8,7 +8,6 @@
         <artifactId>traffic-master</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.zdf</groupId>
     <artifactId>traffic-mq</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>traffic-mq</name>

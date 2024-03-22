@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * @Description batch delete user request class
+ * @Description Batch delete user request class
  * @Author mrzhang
  * @Date 2024/3/16 18:48
  */

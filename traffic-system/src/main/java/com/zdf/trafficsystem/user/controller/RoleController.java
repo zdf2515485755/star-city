@@ -11,7 +11,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- *@Description 类功能简要描述
+ *@Description API for operating role information
  *@Author mrzhang
  *@Date 2024/3/20 16:43
  */
@@ -26,7 +26,7 @@ public class RoleController {
      * @param addRoleRequestDto:
      * @return ResponseResult<Boolean>
      * @author mrzhang
-     * @description add role
+     * @description Add role
      * @date 2024/3/20 17:10
      */
     @PostMapping("/addRole")

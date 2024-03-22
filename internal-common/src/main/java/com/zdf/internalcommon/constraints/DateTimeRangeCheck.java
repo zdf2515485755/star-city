@@ -3,7 +3,7 @@ package com.zdf.internalcommon.constraints;
 import javax.validation.Payload;
 
 /**
- * @Description 类功能简要描述
+ * @Description Datetime range check
  * @Author mrzhang
  * @Date 2024/3/18 19:44
  */
