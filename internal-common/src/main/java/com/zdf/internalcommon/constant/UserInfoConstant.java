@@ -8,6 +8,5 @@ public class UserInfoConstant {
     public static final Integer USER_STATUS_DELETE = 1;
 
     private UserInfoConstant(){
-        throw new IllegalStateException("Utility class");
     }
 }
