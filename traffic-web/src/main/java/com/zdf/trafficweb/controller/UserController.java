@@ -4,10 +4,7 @@ import com.zdf.internalcommon.request.LogInRequestDto;
 import com.zdf.internalcommon.result.ResponseResult;
 import com.zdf.trafficweb.service.UserService;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -31,7 +28,12 @@ public class UserController {
      * @date 2024/3/23 02:24
      */
     @PostMapping("/logIn")
-    public ResponseResult<Boolean> logIn(@Validated @RequestBody LogInRequestDto logInRequestDto){
+    public ResponseResult<String> logIn(@Validated @RequestBody LogInRequestDto logInRequestDto){
         return userService.logIn(logInRequestDto);
+    }
+
+    @GetMapping("/buy")
+    public ResponseResult<String> buyGoods(){
+        return userService.buyGoods();
     }
 }

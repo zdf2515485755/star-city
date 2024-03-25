@@ -18,7 +18,6 @@ public class JpaUtil {
     }
 
     private JpaUtil() {
-        throw new IllegalStateException("Utility class");
     }
 
     public static String[] getNullPropertyNames(Object object){
