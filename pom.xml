@@ -35,6 +35,7 @@
         <module>traffic-transport</module>
         <module>traffic-web</module>
         <module>traffic-induce</module>
+        <module>traffic-customs-declaration</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -75,7 +76,4 @@
             </plugin>
         </plugins>
     </build>
-
-
-
 </project>

@@ -25,6 +25,7 @@ public class JpaUtil {
         return Stream.of(beanWrapper.getPropertyDescriptors())
                 .map(PropertyDescriptor::getName)
                 .filter(propertyName-> beanWrapper.getPropertyValue(propertyName) == null)
+                .filter(propertyName-> beanWrapper.getPropertyValue(propertyName) == "")
                 .toArray(String[]::new);
     }
 
@@ -33,6 +34,7 @@ public class JpaUtil {
         return Stream.of(beanWrapper.getPropertyDescriptors())
                 .map(PropertyDescriptor::getName)
                 .filter(propertyName-> beanWrapper.getPropertyValue(propertyName) != null)
+                .filter(propertyName-> beanWrapper.getPropertyValue(propertyName) != "")
                 .toArray(String[]::new);
     }
 }

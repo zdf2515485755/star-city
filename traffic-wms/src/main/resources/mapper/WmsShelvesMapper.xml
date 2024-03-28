@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zdf.trafficwms.mapper.WmsShelvesMapper">
+
+    <resultMap id="BaseResultMap" type="com.zdf.trafficwms.entity.WmsShelvesEntity">
+            <id property="sid" column="sid" jdbcType="INTEGER"/>
+            <result property="length" column="length" jdbcType="VARCHAR"/>
+            <result property="height" column="height" jdbcType="VARCHAR"/>
+            <result property="width" column="width" jdbcType="VARCHAR"/>
+            <result property="material" column="material" jdbcType="INTEGER"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        sid,length,height,
+        width,material,status
+    </sql>
+</mapper>
