@@ -1,0 +1,7 @@
+
+spring:
+  application:
+    name: traffic-customs-declaration
+server:
+  port: 8083
+
