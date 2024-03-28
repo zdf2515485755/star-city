@@ -10,8 +10,10 @@ import com.zdf.internalcommon.request.RequestDto;
 import com.zdf.internalcommon.request.UpdateWmsShelvesRequestDto;
 import com.zdf.internalcommon.result.ResponseResult;
 import com.zdf.internalcommon.util.JpaUtil;
+import com.zdf.trafficsystem.user.entity.UserEntity;
 import com.zdf.trafficwms.entity.WmsShelvesEntity;
 import com.zdf.trafficwms.mapper.WmsShelvesMapper;
+import com.zdf.trafficwms.remote.TrafficSystemClient;
 import com.zdf.trafficwms.service.WmsShelvesService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,6 +36,8 @@ public class WmsShelvesServiceImpl extends ServiceImpl<WmsShelvesMapper, WmsShel
     implements WmsShelvesService {
     @Resource
     private WmsShelvesMapper wmsShelvesMapper;
+    @Resource
+    private TrafficSystemClient trafficSystemClient;
     private final Logger logger = LoggerFactory.getLogger(WmsShelvesServiceImpl.class);
 
     public ResponseResult<List<WmsShelvesEntity>> queryShelves(QueryShelvesRequestDto queryShelvesRequestDto){
@@ -105,6 +109,20 @@ public class WmsShelvesServiceImpl extends ServiceImpl<WmsShelvesMapper, WmsShel
             return ResponseResult.fail(StatusCode.SHELVES_UPDATE_ERROR.getCode(), StatusCode.SHELVES_UPDATE_ERROR.getMessage(), count);
         }
         return ResponseResult.success(count);
+    }
+
+    public ResponseResult<List<UserEntity>> queryAllUser(){
+        ResponseResult<List<UserEntity>> listResponseResult;
+        try{
+            listResponseResult = trafficSystemClient.queryAllUser();
+        }catch (Exception e){
+            logger.error("REMOTE REQUEST ERROR");
+            return ResponseResult.fail(StatusCode.REMOTE_REQUEST_ERROR.getCode(), StatusCode.REMOTE_REQUEST_ERROR.getMessage(), null);
+        }
+        if (Objects.isNull(listResponseResult)){
+            return ResponseResult.fail(StatusCode.REMOTE_REQUEST_ERROR.getCode(), StatusCode.REMOTE_REQUEST_ERROR.getMessage(), null);
+        }
+        return listResponseResult;
     }
 }
 

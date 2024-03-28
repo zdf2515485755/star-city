@@ -4,6 +4,7 @@ import com.zdf.internalcommon.request.AddWmsShelvesRequestDto;
 import com.zdf.internalcommon.request.QueryShelvesRequestDto;
 import com.zdf.internalcommon.request.UpdateWmsShelvesRequestDto;
 import com.zdf.internalcommon.result.ResponseResult;
+import com.zdf.trafficsystem.user.entity.UserEntity;
 import com.zdf.trafficwms.entity.WmsShelvesEntity;
 import com.zdf.trafficwms.service.impl.WmsShelvesServiceImpl;
 import org.springframework.validation.annotation.Validated;
@@ -67,5 +68,9 @@ public class ShelvesController {
     @PostMapping("/updateShelves")
     public ResponseResult<Integer>updateShelves(@RequestBody UpdateWmsShelvesRequestDto updateWmsShelvesRequestDto){
         return wmsShelvesService.updateShelves(updateWmsShelvesRequestDto);
+    }
+    @GetMapping("/queryAllUser")
+    public ResponseResult<List<UserEntity>> queryAllUser(){
+        return wmsShelvesService.queryAllUser();
     }
 }
